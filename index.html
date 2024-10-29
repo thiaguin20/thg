@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioDiverse</title>
+    <link rel="stylesheet" href="estilo.css">
+
+        <script>
+function alternarTema() {
+    document.body.classList.toggle('tema-escuro');
+    document.querySelector('header').classList.toggle('tema-escuro');
+    document.querySelector('footer').classList.toggle('tema-escuro');
+
+    document.querySelectorAll('a, .titulo, .especie, .contato, .especies').forEach(el => {
+        el.classList.toggle('tema-escuro');
+    });
+
+    const temaBotao = document.getElementById('temaBotao');
+    temaBotao.textContent = document.body.classList.contains('tema-escuro') ? 'Tema Claro' : 'Tema Escuro';
+}
+</script>
+
+    </script>
+    <style>
+        body.tema-escuro {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+header.tema-escuro {
+    background-color: #222;
+}
+
+footer.tema-escuro {
+    background-color: #222;
+}
+
+a.tema-escuro {
+    color: #f0f0f0;
+}
+
+.titulo.tema-escuro {
+    color: #f0f0f0;
+}
+
+.especie.tema-escuro {
+    background: #444;
+    color: #f0f0f0;
+}
+
+.contato.tema-escuro {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.especies.tema-escuro {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <img src="biodiverse.webp" class="logo" alt="">
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#especies">Espécies</a></li>
+                <li><a href="#mamiferos">Mamíferos</a></li>
+                <li><a href="#aves">Aves</a></li>
+                <li><a href="#répteis">Répteis</a></li>
+                <li><a href="#biodiversidade">Biodiversidade</a></li>
+                <li><a href="#animais-extintos">Animais Extintos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <script src="js.js"></script>
+            <input type="text" id="campoPesquisa" placeholder="Buscar tópico">
+            <button onclick="buscarTopico()">Pesquisar</button>
+            <button id="temaBotao" onclick="alternarTema()">Tema Escuro</button>
+        </nav>
+    </header>
+    
+    
+    <main>
+        <div class="titulo">
+            <h2 id="sobre">Bem-vindo ao Guia BioDiverse</h2>
+        </div>
+        
+        <section class="especies">
+            <h2>    BioDiverse</h2>
+            <p>Este site é uma fonte abrangente de informações sobre diferentes espécies de animais. Aqui você encontrará detalhes sobre seus habitats, dietas e características, ajudando a aumentar o conhecimento sobre a diversidade da vida animal. Navegue pelas seções e descubra os maravilhosos mamíferos que habitam nosso planeta!</p>
+        </section>
+
+        <div class="titulo">
+            <h2 id="especies">Sobre Espécies</h2>
+        </div>
+        
+        <div class="especies">
+            <p><strong>O que são espécies?</strong></p>
+            <p>Espécies são grupos de organismos que compartilham características comuns e que podem se reproduzir entre si, gerando descendentes férteis. A classificação das espécies é fundamental para a biologia, pois permite a identificação e a compreensão da diversidade da vida na Terra.</p>
+            <p>As espécies podem ser categorizadas em diferentes grupos, como mamíferos, aves, répteis, anfíbios e peixes, com base em suas características físicas, comportamentais e ecológicas. A preservação das espécies é crucial para a manutenção dos ecossistemas e para a saúde do planeta, uma vez que cada espécie desempenha um papel único na natureza.</p>
+        </div>
+        
+
+        <div class="titulo">
+            <h2 id="mamiferos">Animais Mamíferos</h2>
+        </div>
+        
+        <div class="especie">
+            <div class="carrossel">
+                <div class="animal">
+                    <img src="leao.png" alt="Leão">
+                    <div class="descricao">
+                        <h3>Leão</h3>
+                        <p><strong>Habitat:</strong> Savanas e florestas da África.</p>
+                        <p><strong>Alimentação:</strong> Carnívoro, alimenta-se principalmente de zebras, gnus e antílopes.</p>
+                        <p><strong>Características:</strong> Conhecido como o "rei da selva", vive em grupos sociais chamados de "prides".</p>
+                    </div>
+                </div>
+                
+                <div class="animal">
+                    <img src="tigre.png" alt="Tigre">
+                    <div class="descricao">
+                        <h3>Tigre</h3>
+                        <p><strong>Habitat:</strong> Florestas tropicais e savanas da Ásia.</p>
+                        <p><strong>Alimentação:</strong> Carnívoro, caça cervos, porcos selvagens e outros mamíferos.</p>
+                        <p><strong>Características:</strong> O maior felino do mundo, com listras únicas em seu pelo.</p>
+                    </div>
+                </div>
+
+                <div class="animal">
+                    <img src="hipopotamo.jpeg" alt="Hipopótamo">
+                    <div class="descricao">
+                        <h3>Hipopótamo</h3>
+                        <p><strong>Habitat:</strong> Rios e lagos da África.</p>
+                        <p><strong>Alimentação:</strong> Herbívoro, alimenta-se principalmente de gramas e plantas aquáticas.</p>
+                        <p><strong>Características:</strong> Grande boca e corpo robusto, pode ser muito agressivo se provocado.</p>
+                    </div>
+                </div>
+
+                <div class="animal">
+                    <img src="girafa.png" alt="Girafa">
+                    <div class="descricao">
+                        <h3>Girafa</h3>
+                        <p><strong>Habitat:</strong> Savanas e florestas abertas da África.</p>
+                        <p><strong>Alimentação:</strong> Herbívora, alimenta-se de folhas e brotos altos de árvores.</p>
+                        <p><strong>Características:</strong> O animal terrestre mais alto, com pescoços longos e manchas distintas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="titulo">
+            <h2 id="aves">Aves</h2>
+        </div>
+        
+        <div class="especie">
+            <div class="carrossel">
+                <div class="animal">
+                    <img src="aguia.jpeg" alt="Águia">
+                    <div class="descricao">
+                        <h3>Águia</h3>
+                        <p><strong>Habitat:</strong> Montanhas e florestas do mundo todo.</p>
+                        <p><strong>Alimentação:</strong> Carnívora, alimenta-se de pequenos mamíferos, peixes e aves.</p>
+                        <p><strong>Características:</strong> Conhecida por sua visão aguçada e habilidades de caça excepcionais.</p>
+                    </div>
+                </div>
+                
+                <div class="animal">
+                    <img src="pinguim.jpeg" alt="Pinguim">
+                    <div class="descricao">
+                        <h3>Pinguim</h3>
+                        <p><strong>Habitat:</strong> Regiões frias, especialmente na Antártica.</p>
+                        <p><strong>Alimentação:</strong> Carnívoro, alimenta-se principalmente de peixes e crustáceos.</p>
+                        <p><strong>Características:</strong> Ave que não voa, conhecida por seu andar peculiar e natação ágil.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="papa.jpeg" alt="Papagaio">
+                    <div class="descricao">
+                        <h3>Papagaio</h3>
+                        <p><strong>Habitat:</strong> Florestas tropicais e regiões subtropicais.</p>
+                        <p><strong>Alimentação:</strong> Herbívoro, alimenta-se de sementes, frutas e nozes.</p>
+                        <p><strong>Características:</strong> Conhecido por sua plumagem colorida e habilidade de imitar sons.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="fla.jpeg" alt="Flamingo">
+                    <div class="descricao">
+                        <h3>Flamingo</h3>
+                        <p><strong>Habitat:</strong> Zonas úmidas e lagoas rasas em várias partes do mundo.</p>
+                        <p><strong>Alimentação:</strong> Onívoro, alimenta-se de algas, crustáceos e pequenos invertebrados.</p>
+                        <p><strong>Características:</strong> Conhecido por suas penas rosa e pernas longas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <h2 id="répteis">Répteis</h2>
+        </div>
+        
+        <div class="especie">
+            <div class="carrossel">
+                <div class="animal">
+                    <img src="cro.jpeg" alt="Crocodilo">
+                    <div class="descricao">
+                        <h3>Crocodilo</h3>
+                        <p><strong>Habitat:</strong> Rios, lagos e pântanos em regiões tropicais e subtropicais.</p>
+                        <p><strong>Alimentação:</strong> Carnívoro, alimenta-se de peixes, aves e mamíferos.</p>
+                        <p><strong>Características:</strong> Grande predador aquático, conhecido por sua força e mandíbula poderosa.</p>
+                    </div>
+                </div>
+                
+                <div class="animal">
+                    <img src="tar.jpeg" alt="Tartaruga">
+                    <div class="descricao">
+                        <h3>Tartaruga</h3>
+                        <p><strong>Habitat:</strong> Oceanos, rios e ambientes terrestres.</p>
+                        <p><strong>Alimentação:</strong> Herbívora ou onívora, dependendo da espécie.</p>
+                        <p><strong>Características:</strong> Conhecida por seu casco protetor e longevidade.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="cobra.jpeg" alt="Cobra">
+                    <div class="descricao">
+                        <h3>Cobra</h3>
+                        <p><strong>Habitat:</strong> Florestas, desertos e savanas em todo o mundo.</p>
+                        <p><strong>Alimentação:</strong> Carnívora, alimenta-se de pequenos mamíferos, aves e outros répteis.</p>
+                        <p><strong>Características:</strong> Conhecida por sua capacidade de se mover rapidamente e veneno potente em algumas espécies.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="lag.jpeg" alt="Lagarto">
+                    <div class="descricao">
+                        <h3>Lagarto</h3>
+                        <p><strong>Habitat:</strong> Diversos habitats, incluindo florestas, desertos e áreas urbanas.</p>
+                        <p><strong>Alimentação:</strong> Onívoro, alimenta-se de insetos, plantas e pequenos animais.</p>
+                        <p><strong>Características:</strong> Conhecido por sua capacidade de regenerar caudas e por sua diversidade de espécies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="titulo">
+            <h2 id="biodiversidade">Sobre a Biodiversidade</h2>
+        </div>
+        
+        <div class="especies">
+            <p><strong>O que é a biodiversidade?</strong></p>
+            <p>A biodiversidade refere-se à variedade de formas de vida na Terra, incluindo a diversidade de espécies, genética e ecossistemas. Ela abrange todos os organismos vivos, desde microorganismos até plantas e animais, e é essencial para a saúde e o funcionamento dos ecossistemas.</p>
+            <p>A biodiversidade desempenha papéis cruciais na manutenção do equilíbrio ecológico, fornecendo serviços essenciais, como polinização, controle de pragas e qualidade do ar e da água. No entanto, muitas espécies estão ameaçadas devido à ação humana, como a destruição de habitats e a poluição, tornando a conservação da biodiversidade uma prioridade global.</p>
+        </div>
+
+        <div class="titulo">
+            <h2 id="animais-extintos">Animais Extintos</h2>
+        </div>
+        
+        <div class="especie">
+            <div class="carrossel">
+                <div class="animal">
+                    <img src="mamu.jpeg" alt="Mamute">
+                    <div class="descricao">
+                        <h3>Mamute</h3>
+                        <p><strong>Período:</strong> Pleistoceno (2,5 milhões a 10.000 anos atrás).</p>
+                        <p><strong>Habitat:</strong> Regiões frias e áreas de tundra.</p>
+                        <p><strong>Características:</strong> Semelhante aos elefantes modernos, possuía pelos longos e grandes presas curvas.</p>
+                    </div>
+                </div>
+                
+                <div class="animal">
+                    <img src="dodo.jpeg" alt="Dodô">
+                    <div class="descricao">
+                        <h3>Dodô</h3>
+                        <p><strong>Extinção:</strong> Por volta de 1681.</p>
+                        <p><strong>Habitat:</strong> Ilha Maurício, no Oceano Índico.</p>
+                        <p><strong>Características:</strong> Ave que não voava, tinha uma aparência robusta e era incapaz de escapar dos predadores introduzidos pelos seres humanos.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="tigredente.jpeg" alt="Tigre Dentes-de-Sabre">
+                    <div class="descricao">
+                        <h3>Tigre Dentes-de-Sabre</h3>
+                        <p><strong>Período:</strong> Pleistoceno (até cerca de 10.000 anos atrás).</p>
+                        <p><strong>Habitat:</strong> Florestas e áreas abertas da América do Norte e do Sul.</p>
+                        <p><strong>Características:</strong> Grande felino com presas longas e curvas, adaptado para caçar grandes herbívoros.</p>
+                    </div>
+                </div>
+        
+                <div class="animal">
+                    <img src="pae.jpeg" alt="Pássaro Elefante">
+                    <div class="descricao">
+                        <h3>Pássaro Elefante</h3>
+                        <p><strong>Extinção:</strong> Entre os séculos XVII e XVIII.</p>
+                        <p><strong>Habitat:</strong> Madagascar.</p>
+                        <p><strong>Características:</strong> Uma das maiores aves que já existiu, incapaz de voar, chegando a medir até 3 metros de altura.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+
+        <div class="titulo"><h2 id="contato">Contato</h2></div>
+        <div class="contato">
+            <p><strong>Telefone:</strong> (18) 99616-4798</p>
+            <p><strong>Instagram:</strong> <a class="taga" href="https://www.instagram.com/thiagoh06_/">@thiagoh06_</a></p>
+            <p><strong>email:</strong> thiagopiovans@gmail.com</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 BioDiverse. Todos os direitos reservados.</p>
+        <p>Criado por Thiago Henrique</p>
+    </footer>
+</body>
+</html>

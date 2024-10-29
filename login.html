@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #3e3232;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #092e0d;
+            /*background-image: url(fundologin.webp);
+            background-size: cover;
+            background-position: center;*/
+            flex-direction: column;
+        }
+        
+        .titulo {
+            font-size: 36px;
+            color: #f8fff8;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(49, 13, 13, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            color: #092e0d;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #2a65a4;
+            outline: none;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            margin-bottom: 5px 1%;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            background-color: #092e0d;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        #msg {
+            text-align: center;
+            color: #d9534f;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="titulo">Biodiverse</div>
+    
+    <form action="">
+        <h2>Login</h2>
+        <label for="txtnome">Nome</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" id="txtnome">
+        <label for="txtemail">Email</label>
+        <input type="text" name="email" placeholder="Digite seu email" id="txtemail">
+        <label for="txtsenha">Senha</label>
+        <input type="password" name="senha" placeholder="Digite sua senha" id="txtsenha">
+        <button type="button" onclick="cadastrar()">Cadastrar</button>
+        <button type="button" onclick="logar()">Logar</button>
+        <p id="msg"></p>
+        
+    </form>
+
+    <script src="app.js"></script>
+    <script src="cadastrar.js"></script>
+</body>
+</html>
